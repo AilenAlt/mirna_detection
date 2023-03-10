@@ -7,13 +7,13 @@ Las caracteristicas requeridas para realizar la clasificación - como energía l
 ## Instalación ##
 Los siguientes comandos permiten instalar las bibliotecas necesarias:
 
-'''
+``` python
 pip3 install matplotlib
 pip3 install numpy
 pip3 install pandas
 pip3 install seaborn
 pip3 install sklearn
-'''
+```
 
 ## Corrida ##
 El proyecto fue realizado haciendo uso del sistema operativo Ubuntu 20.04.4 LTS
@@ -21,9 +21,14 @@ El proyecto fue realizado haciendo uso del sistema operativo Ubuntu 20.04.4 LTS
 El script *get_data.sh* permite descargar el dataset utilizado en este análisis.
 Comando para ejecutar el script en una terminal terminal:
 
-'''
+``` bash
 bash get_data.sh
-'''
+```
+Alternativamente, es posible obtener el dataset utilizado descomprimiendo el archivo *dme.csv.gz*.
+
+``` bash
+gunzip dme.csv.gz
+```
 
 El jupyter notebook *predict_mirna.ipynb* fue ejecutado utilizando Visual Studio Code. El código no genera
 archivos de salida, los resultados pueden ser visualizados al ejecutar el notebook.
