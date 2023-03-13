@@ -64,9 +64,8 @@ La métrica *accuracy* no funciona bien cuando las clases están desbalanceadas 
 A partir de los graficos en los que se evaluan los modelos es posible concluir que:
 - Se obtienen valores de f1 similares a los obtenidos durante desarrollo. 
 - Los dos modelos poseen valores similares de precisión, recall y f1. 
-- En general, la dispersión de estos estimadores es menor para el modelo RF. 
-- Sin embargo, la mediana de los estimadores es mayor para el modelo KNN, por lo cual podría considerarse 
-que que este modelo tiene una mejor *performance*.
+- En general, la dispersión de estos estimadores es menor para el modelo KNN. 
+- Sin embargo, la mediana de algunos estimadores es mayor para el modelo RF.
 
 ## Limitaciones ##
 Es importante destacar que el proyecto tiene algunas limitaciones que podrían afectar los resultados y las conclusiones. Una de ellas es la sobrerrepresentación de la clase 0 en el conjunto de datos utilizado. Esta clase representa secuencias que codifican RNAs capaces de formar estructura de horquilla pero que no tienen una función de miRNA conocida. El desbalance de clases puede afectar la capacidad de los modelos para detectar correctamente pre-miRNAs de la clase 1 (secuencias que codifican pre-miRNAs con función identificada según miRBase).
@@ -80,6 +79,6 @@ Es importante tener en cuenta estas limitaciones al interpretar los resultados d
 ## Conclusión ##
 En este proyecto se utilizó aprendizaje automático para la detección de pre-miRNAs en el genoma de *Drosophila melanogaster*. Se compararon dos modelos, KNN y Random Forest, en términos de su desempeño en la clasificación de secuencias como pre-miRNAs con función o secuencias que no son pre-miRNAs.
 
-Los resultados mostraron que los dos modelos se desempeñaron de forma similar, con valores similares de precisión, *recall* y F1. Sin embargo, la mediana de los estimadores fue levemente mayor para el modelo KNN, lo que sugiere que este modelo puede ser ligeramente superior en términos de su desempeño general. Además, se observó que el modelo de Random Forest presentó una menor dispersión en los valores estimados de precisión, *recall* y F1.
+Los resultados mostraron que los dos modelos se desempeñaron de forma similar, con valores similares de precisión, *recall* y F1. Sin embargo, la mediana de los estimadores fue levemente mayor para el modelo RF, lo que sugiere que este modelo puede ser ligeramente superior en términos de su desempeño general. Además, se observó que el modelo de KNN presentó una menor dispersión en los valores estimados de precisión, *recall* y F1.
 
 En general, los resultados obtenidos indican que el uso de técnicas de aprendizaje automático para la detección de pre-miRNAs puede ser una estrategia efectiva. 
